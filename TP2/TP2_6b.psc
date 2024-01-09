@@ -6,36 +6,37 @@
 //Calcular hipotenusa de triangulo rectangulo
 Algoritmo TP2_6b
 	//Usar formula de Heron
-	Escribir "Ingresar longitudes de lados del triangulo"
-	Leer l1,l2,l3
-	Si expresion_logica Entonces
-		acciones_por_verdadero
-	SiNo
-		acciones_por_falso
-	Fin Si
-	Segun p Hacer
-		Equilatero:
+	Escribir "Ingresar opcion de triangulo"
+	Escribir "1:Equilatero 2:Isosceles 3:Escaleno"
+	Leer op //opcion
+	//se va a asignar perimetro segun opcion elegida
+	Segun op Hacer 
+		1:
 			Escribir "Ingresar lado del triangulo"
 			Leer l
 			p <- 3*l
-		opcion_2:
+		2:
 			Escribir "Ingresar lado y base del triangulo"
 			Leer l,b
-			p <- 2*l+b
-		opcion_3:
+			p <- (2*l)+b
+		3:
 			Escribir "Ingresar lados del triangulo"
 			Leer a,b,c
 			p <- a+b+c
 		De Otro Modo:
-			secuencia_de_acciones_dom
+			Escribir "No es una opcion valida"
 	Fin Segun
-	Escribir "Perimetro: ",p
-	sp <- p/2
-	Si expresion_logica Entonces
-		acciones_por_verdadero
-	SiNo
-		acciones_por_falso
-	Fin Si
-	a <- expresion
+	sp <- p/2 //semiperimetro asignado
+	Segun op Hacer //se va a asignar area segun opcion elegida
+		1:
+			//area <- (sp*(3*(sp-l)))^(1/2)
+			area <- (sp*(sp-l)*(sp-l)*(sp-l))^(1/2)
+		2:
+			//area <- (sp*(2*(sp-l))*(sp-b))^(1/2)
+			area <- (sp*(sp-l)*(sp-l)*(sp-b))^(1/2)
+		3:
+			area <- (sp*(sp-a)*(sp-b)*(sp-c))^(1/2)
+	Fin Segun
+	Escribir "Area del triangulo: ",area
 	
 FinAlgoritmo
