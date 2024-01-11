@@ -10,11 +10,8 @@ Algoritmo TP2_6f
 	Escribir "Ingresar catetos del triangulo rectangulo"
 	Leer c1,c2 //cateto1 y cateto2
 	h2 <- (c1^2)+(c2^2) //hipotenusa al cuadrado asignada
-	//No hay error cuando paso resultado a h2!!!
-	h <- (h2)*(1/2) //hipotenusa asignada
-	//No me detecta division!!!!
+	h <- (h2)^(1/2) //hipotenusa asignada
+	//AGREGAR ^
 	Escribir "Valor de Hipotenusa: ",h
-	Escribir "Suma",(c1^2)+(c2^2)
-	Escribir "h2",h2
 	
 FinAlgoritmo
