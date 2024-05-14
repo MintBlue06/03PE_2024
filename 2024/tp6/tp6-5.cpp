@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
+#include <stdio.h> //gets
 typedef char cadena[50];
 
 using namespace std;
@@ -9,9 +9,9 @@ using namespace std;
 //si al primera es menor a la segunda se concatenan
 //sino se imprime la suma de sus longitudes 
 int main(int argc, char *argv[]) {
-	cadena cad1, cad2;
+	cadena cad1, cad2,var;
 	cout << "Ingresar cadena: ";
-	gets(cad1);
+	var=gets(cad1);
 	cout << "Ingresar otra cadena: ";
 	gets(cad2);
 	if( strlen(cad1)>0 && strlen(cad2)>0 ) {

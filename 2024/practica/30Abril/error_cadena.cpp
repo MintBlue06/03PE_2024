@@ -32,9 +32,9 @@ int main(int argc, char *argv[]) {
 				}
 			}
 		}
-		cout<<"Seguir? s"<<endl;
+		cout<<"Seguir? s";
 		cin>>opcion;
-	} while( opcion=='s' || opcion=='S');
+	} while( opcion='s' || opcion='S');
 	strcpy(nueva,menor);
 	strcat(nueva,mayor);
 	cout << "Cadena mayor: "<<mayor<<endl;

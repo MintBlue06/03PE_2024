@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-
+#include <stdio.h>
 using namespace std;
 typedef char cadena[30];
 //Averigua cadena mayor, menor y concatena
